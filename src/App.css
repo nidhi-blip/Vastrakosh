@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+:root{
+    --primary-color:#fd7e14;
+    --secondary-color:#F8F9Fa;
+
+}
+
+body{
+    font-family:  "Poppins", serif;
+    font-weight: 500;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* normalize */
+p {
+    margin: 0;
+}
+/* slider CSS */
+#promotional_slider {
+    /* width: 90%; */
+    padding: 20px 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #fff;
+}
+/* .slick-slide{
+    margin-left: 25px;
+} */
+
+.slick-slide > div {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+
+#promotional_slider .promotionalslider_wrapper .slick-arrow {
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    -webkit-appearance: none;
+    border: 0;
+    background: #444;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+#promotional_slider .promotionalslider_wrapper .slick-arrow:before {
+    font-size: 23px;
+    color: #fff;
+}
+#promotional_slider .promotionalslider_wrapper .slick-arrow.slick-next:before {
+    content: ">";
+}
+#promotional_slider .promotionalslider_wrapper .slick-arrow.slick-prev:before {
+    content: "<";
+}
+#promotional_slider .promotionalslider_wrapper .slick-arrow:hover {
+    cursor: pointer;
+}
+#promotional_slider .promotionalslider_wrapper .slick-arrow.slick-disabled {
+    opacity: 0.5;
+    background: #ccc;
+}
+#promotional_slider .promotionalslider_wrapper .slick-arrow.slick-disabled:hover {
+    cursor: not-allowed;
+}
+#promotional_slider .promotionalslider_wrapper.slick-initialized {
+    position: relative;
+}
+#promotional_slider .promotionalslider_wrapper.slick-initialized .slick-arrow {
+    position: absolute;
+    /* top: 50%; */
+    transform: translateY(-50%);
+    z-index: 9;
+}
+ .slick-next {
+    top: 10px;
+    /* top: 20px; */
+    right: -25px !important;
+}
+.slick-prev {
+    top: 10px;
+    right: 40px !important;
+    /* left: -25px; */
+}
+#promotional_slider .promotionalslider_wrapper .promotionalslider_single {
+    display: flex;
+    width: 25%;
+    flex: 0 0 25%;
+    flex-direction: column;
+    /* border: 5px solid #444; */
+    margin: 0 10px;
+}
+#promotional_slider .promotionalslider_wrapper .promotionalslider_single section {
+    background: no-repeat center center ;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+}
+#promotional_slider .promotionalslider_wrapper .promotionalslider_single p {
+    /* background-color:black; */
+    color:black;
+   
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    font-size: 19px;
+}
+ .bg-orange {
+    background-color:var(--primary-color) !important; 
+    color: white !important; /* Optional for contrast */
+}
+.bg-product{
+    background-color: var(--secondary-color);
+}
+.btn-outline-secondary {
+    color: var(--primary-color) !important;
+    border-color:var(--primary-color) !important;
+}
+.bg-text{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.card{
+    margin-top: 20px;
+}
+.w-25px{
+width:25px;
+}
+.w-40px{
+    width: 50px;
+    height: 80px;
+}
+.sale-banner{
+    background-image: url("../src/assets/sale/main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+}
+
+
+.overlay {
+    height: 100px;
+    width: 600px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 800;
+}
+.login-img{
+    background-image: url("https://img.freepik.com/free-vector/online-shopping-banner-mobile-app-templates-concept-flat-design_1150-34862.jpg?t=st=1732119297~exp=1732122897~hmac=94dae4d5eea716cd244cb21e0401341cf5246c3a5e53b12cb33b844926452eee&w=740" );
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 100px);
+}
+
+.login-container{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.count{
+    padding: 0px 5px 0px 5px !important;
+}
+
+.customheight{
+    height: calc(100vh - 100px);
+}
+
+.light_blue{
+    background-color:light-blue
+}
